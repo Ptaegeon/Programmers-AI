@@ -35,9 +35,10 @@ Softmax Regression.ipynb에 있는 코드를 수정해서 다음을 구현
 ![ovr-decision boundary](https://user-images.githubusercontent.com/114375142/201272993-584efdf3-f817-463b-9174-76fb049235d2.png)
 
 ###  Trouble Shooting
-1. colab 환경에서 실행하면서, DecisionBoundary 함수가 import 되지 않았다
-- colab에서는 sklearn 버전이 0.24인데,  DecisionBoundary 함수는 1.1 버전에서 추가되어 colab에서 사용 불가였다.
-- sklearn 을 colab에서 upgrade 해보려했지만, 해당 version 없다는 경고를 띄우면서 upgrade에 실패했고, 다른 방식으로 구현했다.
+1. colab 환경에서 실행하면서, DecisionBoundaryDisplay 함수가 import 되지 않았다
+- colab에서는 sklearn 버전이 0.24인데, DecisionBoundaryDisplay 함수는 1.1. 버전에서 추가된 함수이다.
+- sklearn을 upgrade 하려니, python 3.7 버전을 사용하는 colab에서는 sklearn이 1.0까지 지원되었다. 
+- colab에서 python upgrade는 포기했다... 다른 방식으로 구현했다.
 ```python
 grid_size = 500
 np.meshgrid((np.linespace(X[:,0].min, X[:,0].max, grid_size)), (np.linespace(X[:,1].min, X[:,1].max, grid_size)))
