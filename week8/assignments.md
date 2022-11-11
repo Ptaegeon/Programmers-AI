@@ -31,8 +31,8 @@ Softmax Regression.ipynb에 있는 코드를 수정해서 다음을 구현
 
 아래 이미지처럼 한 모델의 결정경계는 세 개의 직선방정식으로 나타낼 수 있습니다. 즉, 클래스1과 클래스2의 경계를 나타내는 직선방정식, 클래스1과 클래스3의 경계를 나타내는 직선방정식 그리고 클래스2와 클래스3의 경계를 나타내는 직선방정식입니다. 방정식들을 구하고 화면에 그려보세요.
 
-![multinomial-decision boundary]()  
-![ovr-decision boundary]()
+![multinomial-decision boundary](https://user-images.githubusercontent.com/114375142/201272985-737b33cc-1808-4b3c-bc5e-a962ba3ce8ca.png)  
+![ovr-decision boundary](https://user-images.githubusercontent.com/114375142/201272993-584efdf3-f817-463b-9174-76fb049235d2.png)
 
 ###  Trouble Shooting
 1. colab 환경에서 실행하면서, DecisionBoundary 함수가 import 되지 않았다
